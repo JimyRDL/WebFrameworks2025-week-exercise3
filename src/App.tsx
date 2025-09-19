@@ -1,8 +1,9 @@
 import "./App.css";
+import CostCalculator from "./CostCalculator.tsx";
 
-function App() {
+function App({priceOfSingleVMPerHour} : {priceOfSingleVMPerHour : number}) {
   return <div className="App">
-    Write your solution here and remove this text
+      <CostCalculator priceOfSingleVMPerHour={priceOfSingleVMPerHour}/>
   </div>;
 }
 
